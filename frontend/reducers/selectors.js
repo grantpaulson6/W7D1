@@ -5,5 +5,3 @@ export const allTodos = state => {
     return state.todos[todoId]
   });
 }
-
-window.allTodos = allTodos;
