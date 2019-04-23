@@ -1,5 +1,7 @@
 import React from 'react';
 import { allTodos } from '../../reducers/selectors';
+import ToDoListItem from './todo_list_item';
+import TodoForm from './todo_form';
 
 const ToDoList = ({ todos, receiveTodo }) => {
   // debugger
@@ -7,8 +9,9 @@ const ToDoList = ({ todos, receiveTodo }) => {
     <div>
       <h3>Todo List Goes Here!</h3>
       <ul>
-        { todos.map(todo => <li key={todo.id}> {todo.title} </li> ) }
+        { todos.map(todo => <ToDoListItem todo={todo} key={todo.id}/> ) }
       </ul>
+      <TodoForm receiveTodo={receiveTodo}/>
     </div>
   )
 }

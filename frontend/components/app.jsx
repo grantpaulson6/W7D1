@@ -1,5 +1,5 @@
 import React from 'react';
-import ToDoListContainer from './todos/to_do_list_container';
+import ToDoListContainer from './todo_list/todo_list_container';
 
 const App = () => (
   <div>
